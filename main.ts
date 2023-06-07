@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    password = "" + passwordinput + "A"
+    passwordinput = "" + passwordinput + "A"
 })
 // reset password and door when both buttons are pressed
 input.onButtonPressed(Button.AB, function () {
@@ -10,7 +10,7 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    password = "" + passwordinput + "B"
+    passwordinput = "" + passwordinput + "B"
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     if (password == passwordinput) {
@@ -26,5 +26,7 @@ let passwordinput = ""
 let password = ""
 // password composed of a's and b's (also a great band)
 password = "ABBA"
+// password composed of a's and b's (also a great band)
+passwordinput = ""
 // close the door
 pins.servoWritePin(AnalogPin.P0, 180)
